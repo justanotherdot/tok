@@ -4,5 +4,5 @@ use chrono::prelude::*;
 
 fn main() {
     let utc: DateTime<Utc> = Utc::now();
-    println!("{}", utc);
+    println!("{}", utc.to_rfc3339());
 }
