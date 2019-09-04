@@ -1,3 +1,8 @@
+extern crate chrono;
+
+use chrono::prelude::*;
+
 fn main() {
-    println!("Hello, world!");
+    let utc: DateTime<Utc> = Utc::now();
+    println!("{}", utc);
 }
